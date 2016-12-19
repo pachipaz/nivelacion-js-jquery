@@ -4,7 +4,15 @@ $(document).ready( function(){
 	renderHighlightedRecipes(recipesArray);
 
 	$('#off-menu').hide();
+	$('.js-back').hide();
+	
+/*RECETA NUEVA*/
 
+function printNews(nuevaReceta){
+	$('.callout-news').append('<p>NUEVAS RECETAS</p>');
+	
+}
+printNews();
 });
 
 
@@ -44,12 +52,6 @@ function renderActivity(recipe) {
 	
 }
 
+	
 
-$(function(){
-	init();
-});
-function init()
-{
-	var x = $('.js-back');
-	x.click()
-}
+
